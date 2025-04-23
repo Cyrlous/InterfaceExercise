@@ -43,7 +43,46 @@ namespace InterfaceExercise
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
+
+            var beetle = new Car()
+            {
+                NumberOfWheels = 4,
+                NumberOfDoors = 4,
+                Color = "yellow",
+                HornSound = "Beep!",
+                Logo = "Volkswagen",
+                Country = "Germany",
+                HasTrunk = true,
+                FrontEngine = false
+            };
             
+            var f150  = new Truck()
+            {
+                NumberOfWheels = 4,
+                NumberOfDoors = 2,
+                Color = "gray",
+                HornSound = "Honk!",
+                Logo = "Ford",
+                Country = "The United States",
+                FullBed = true,
+                ExtendedCab = false
+            };
+            
+            var landCruiser = new SUV()
+            {
+                NumberOfWheels = 4,
+                NumberOfDoors = 4,
+                Color = "Black",
+                HornSound = "HONK!",
+                Logo = "Toyota",
+                Country = "Japan",
+                FullSize = true,
+                NumberOfSeats = 8
+            };
+            
+            beetle.DisplayCarInfo();
+            f150.DisplayCarInfo();
+            landCruiser.DisplayCarInfo();
         }
     }
 }

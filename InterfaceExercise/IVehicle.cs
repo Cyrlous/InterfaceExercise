@@ -6,4 +6,6 @@ public interface IVehicle
     public int NumberOfDoors { get; set; }
     public string Color { get; set; }
     public string HornSound {get; set;}
+
+    public void DisplayCarInfo();
 }
